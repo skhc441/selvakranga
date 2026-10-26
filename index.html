@@ -3,6 +3,23 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- GitHub Pages cannot send custom HTTP headers, so the policy is declared
+     here instead. The page has no inline scripts and no inline event
+     handlers, which is what lets script-src stay at 'self'. The inline
+     style="--d:..." attributes on revealed elements are why style-src still
+     needs 'unsafe-inline'. frame-ancestors and nosniff are deliberately
+     absent: browsers ignore both in a meta tag. See README. -->
+<meta http-equiv="Content-Security-Policy" content="
+  default-src 'none';
+  script-src 'self';
+  style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
+  font-src https://fonts.gstatic.com;
+  img-src 'self' data:;
+  form-action 'none';
+  base-uri 'none';
+  upgrade-insecure-requests">
+<meta name="referrer" content="strict-origin-when-cross-origin">
 <title>Selva Kumar Ranganathan — Lead AWS Cloud Architect & AI/DevOps Researcher</title>
 <meta name="description" content="Lead AWS Cloud Architect on Maryland's MD THINK platform. Author of the AI-Augmented DevSecOps, Cognitive DevOps and PromptOps frameworks. 20 years modernizing large-scale public-sector cloud systems.">
 <meta property="og:title" content="Selva Kumar Ranganathan — Lead AWS Cloud Architect & AI/DevOps Researcher">
@@ -13,7 +30,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <!-- bump ?v= on both asset links after a deploy so browsers pick up changes immediately -->
-<link rel="stylesheet" href="styles.css?v=4">
+<link rel="stylesheet" href="styles.css?v=5">
 </head>
 <body>
 
@@ -582,6 +599,6 @@
   </div>
 </footer>
 
-<script src="script.js?v=4"></script>
+<script src="script.js?v=5"></script>
 </body>
 </html>
