@@ -60,8 +60,8 @@ profile when they move.
 
 ## Deploying
 
-The site is live at <https://skhc441.github.io/>, served by GitHub Pages from
-the `main` branch of `skhc441/skhc441.github.io`. Deploying is just:
+The site is live at <https://skhc441.github.io/selvakranga/>, served by GitHub
+Pages from the `main` branch of `skhc441/selvakranga`. Deploying is just:
 
 ```bash
 git add -A && git commit -m "your message" && git push
