@@ -77,6 +77,45 @@ update to appear immediately, bump the `?v=` number on both links in
 `CLAUDE.md` and `assets/source/` are deliberately **not** in the repo (see
 `.gitignore`); they stay local and travel between machines through OneDrive.
 
+## Security
+
+Settings in effect on `skhc441/selvakranga`:
+
+| Setting | State |
+|---|---|
+| HTTPS enforced on Pages | on |
+| Secret scanning + push protection | on |
+| Dependabot alerts | on |
+| `main` protected from force-push and deletion | on (admins included) |
+| Issues / wiki / projects | off — unused spam surface |
+
+The page sends a strict Content-Security-Policy via a `<meta>` tag, because
+GitHub Pages cannot send custom HTTP headers. `script-src` is `'self'` with no
+`unsafe-inline`, which only works because the page has no inline `<script>` and
+no inline `on*` handlers. **Keep it that way** — adding either will silently
+break the page under CSP. `style-src` still needs `'unsafe-inline'` for the
+`style="--d:..."` delay attributes.
+
+If you ever need to rewrite history again, branch protection will block the
+force-push; turn it off, push, turn it back on:
+
+```bash
+gh api -X DELETE repos/skhc441/selvakranga/branches/main/protection
+```
+
+### What GitHub Pages cannot do
+
+Pages serves only `Strict-Transport-Security`. These need a proxy in front
+(Cloudflare's free tier can inject them with a Transform Rule):
+
+- `X-Frame-Options` / `frame-ancestors` — browsers ignore both in a meta tag,
+  so the site can be embedded in an iframe by anyone
+- `X-Content-Type-Options: nosniff`
+- `Permissions-Policy`
+
+None of these is urgent for a static brochure site with no logins or forms that
+submit, but they are the gap if you want a clean security-header score.
+
 ### Other hosts
 
 Any static host works, since there is nothing to build. Upload the folder, or
