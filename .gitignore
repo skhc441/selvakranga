@@ -1,0 +1,26 @@
+# ---------------------------------------------------------------
+# This repository is PUBLIC (GitHub Pages on a free account).
+# Everything listed here stays local and reaches the other machine
+# through OneDrive, not through git.
+# ---------------------------------------------------------------
+
+# Private project notes. Contains immigration-petition context and
+# other material that must never be published. Do not remove this line.
+CLAUDE.md
+
+# Local Claude Code config and permissions
+.claude/
+
+# Photo originals used to generate assets/portrait.jpg. The site only needs
+# the cropped portrait; the uncropped personal photos stay off the public repo.
+assets/source/
+
+# macOS / editor noise
+.DS_Store
+._*
+.vscode/
+.idea/
+
+# Scratch
+*.log
+tmp/

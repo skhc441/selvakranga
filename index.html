@@ -1,0 +1,587 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Selva Kumar Ranganathan — Lead AWS Cloud Architect & AI/DevOps Researcher</title>
+<meta name="description" content="Lead AWS Cloud Architect on Maryland's MD THINK platform. Author of the AI-Augmented DevSecOps, Cognitive DevOps and PromptOps frameworks. 20 years modernizing large-scale public-sector cloud systems.">
+<meta property="og:title" content="Selva Kumar Ranganathan — Lead AWS Cloud Architect & AI/DevOps Researcher">
+<meta property="og:description" content="Cloud architecture for systems people depend on, and published research bringing AI into DevSecOps.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%230b1220'/><text y='70' x='50' text-anchor='middle' font-size='52' font-family='monospace' font-weight='700' fill='%2338bdf8'>SR</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<!-- bump ?v= on both asset links after a deploy so browsers pick up changes immediately -->
+<link rel="stylesheet" href="styles.css?v=4">
+</head>
+<body>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="nav" id="nav">
+  <div class="shell nav-inner">
+    <a class="brand" href="#top">
+      <span class="brand-mark">SR</span>
+      <span class="brand-name">Selva&nbsp;Kumar&nbsp;Ranganathan</span>
+    </a>
+    <nav class="nav-links" id="navLinks" aria-label="Primary">
+      <a href="#about">About</a>
+      <a href="#impact">What I Do</a>
+      <a href="#work">Work</a>
+      <a href="#research">Research</a>
+      <a href="#journey">Journey</a>
+      <a href="#press">Press</a>
+      <a href="#contact" class="nav-cta">Contact</a>
+    </nav>
+    <div class="nav-tools">
+      <button class="icon-btn" id="themeToggle" aria-label="Switch theme" title="Switch theme">
+        <svg class="i-sun" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+        <svg class="i-moon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+      </button>
+      <button class="icon-btn menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ───────── HERO ───────── -->
+  <section class="hero" id="top">
+    <canvas class="hero-canvas" id="net" aria-hidden="true"></canvas>
+    <div class="hero-glow" aria-hidden="true"></div>
+    <div class="shell hero-inner">
+      <p class="eyebrow reveal">Lead AWS Cloud Architect &middot; DevOps &amp; AI Researcher</p>
+      <h1 class="hero-title reveal" style="--d:.06s">
+        Cloud architecture for<br>
+        systems people<br>
+        <em>actually depend on</em>
+      </h1>
+      <p class="hero-sub reveal" style="--d:.12s">
+        I architect and secure the AWS platforms behind statewide human-services systems — and
+        publish the research that brings AI into DevSecOps, observability and infrastructure as code.
+        Twenty years of making large, regulated systems hold up on their worst day.
+      </p>
+      <div class="hero-actions reveal" style="--d:.18s">
+        <a class="btn btn-primary" href="#work">
+          Explore my work
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <a class="btn btn-ghost" href="#research">Read the research</a>
+      </div>
+      <dl class="stats reveal" style="--d:.24s">
+        <div class="stat"><dt>Years in the field</dt><dd data-count="20" data-suffix="+">20+</dd></div>
+        <div class="stat"><dt>Peer-reviewed papers</dt><dd data-count="9">9</dd></div>
+        <div class="stat"><dt>Citations</dt><dd data-count="63">63</dd></div>
+        <div class="stat"><dt>International awards</dt><dd data-count="2">2</dd></div>
+      </dl>
+    </div>
+    <a class="scroll-hint" href="#about" aria-label="Scroll to about"><span></span></a>
+  </section>
+
+  <!-- ───────── MARQUEE ───────── -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <span>AWS</span><i>/</i><span>Cloud Architecture</span><i>/</i><span>DevSecOps</span><i>/</i><span>Terraform</span><i>/</i><span>Kubernetes</span><i>/</i><span>Observability</span><i>/</i><span>MLOps</span><i>/</i><span>LLM &amp; IaC</span><i>/</i><span>FedRAMP</span><i>/</i>
+      <span>AWS</span><i>/</i><span>Cloud Architecture</span><i>/</i><span>DevSecOps</span><i>/</i><span>Terraform</span><i>/</i><span>Kubernetes</span><i>/</i><span>Observability</span><i>/</i><span>MLOps</span><i>/</i><span>LLM &amp; IaC</span><i>/</i><span>FedRAMP</span><i>/</i>
+    </div>
+  </div>
+
+  <!-- ───────── ABOUT ───────── -->
+  <section class="section" id="about">
+    <div class="shell about-grid">
+      <div class="about-media reveal">
+        <div class="portrait no-photo">
+          <!-- Monogram by choice; see README for how to use a photo instead. -->
+          <div class="portrait-fallback" aria-hidden="true">SR</div>
+          <div class="portrait-ring" aria-hidden="true"></div>
+        </div>
+        <ul class="facts">
+          <li><span>Role</span><strong>Lead AWS Cloud Architect</strong></li>
+          <li><span>Platform</span><strong>MD THINK, Maryland</strong></li>
+          <li><span>Since</span><strong>2006 in the field</strong></li>
+          <li><span>Field</span><strong>AI-augmented DevSecOps</strong></li>
+          <li><span>Open to</span><strong>Advisory &amp; speaking</strong></li>
+        </ul>
+      </div>
+      <div class="about-copy">
+        <p class="kicker reveal">About</p>
+        <h2 class="reveal" style="--d:.05s">I build the layer everything<br>else depends on.</h2>
+        <p class="lede reveal" style="--d:.1s">
+          For most of twenty years my work has sat underneath systems that people cannot afford
+          to have fail — benefits platforms, eligibility systems, regulated public-sector cloud.
+          When these break, someone loses their coverage. That shapes how I design.
+        </p>
+        <p class="reveal" style="--d:.14s">
+          Since 2019 I have been Lead AWS Cloud Architect on <strong>MD THINK</strong>, Maryland's
+          shared cloud platform for human services, leading a team across DevOps, networking,
+          identity and access management and system administration. Before that I spent nearly
+          three years as Senior Technical Release and Infrastructure Lead on the
+          <strong>Arkansas Enrollment and Eligibility Framework</strong> at Arkansas DHS. The
+          through-line is the same: large, regulated, high-consequence systems, moved to the
+          cloud without losing the guarantees they had before.
+        </p>
+        <p class="reveal" style="--d:.18s">
+          The other half of my work is research. Across nine peer-reviewed papers from 2022 to 2025
+          I've developed a connected set of frameworks — <strong>AI-Augmented DevSecOps</strong>,
+          <strong>Cognitive DevOps</strong>, <strong>Neuroadaptive DevOps</strong>,
+          <strong>Trustworthy MLOps</strong> and <strong>PromptOps</strong> — that embed predictive
+          models and large language models directly into delivery pipelines, so infrastructure
+          anticipates failure instead of reacting to it. I serve on two journal editorial boards,
+          review others' work in the field, and have given keynotes at international conferences
+          in 2022, 2023, 2024 and 2025.
+        </p>
+        <div class="chips reveal" style="--d:.22s">
+          <span>AWS</span><span>Cloud Architecture</span><span>DevSecOps</span><span>Terraform</span>
+          <span>Kubernetes</span><span>CI/CD</span><span>Observability</span><span>MLOps</span>
+          <span>LLM &amp; IaC</span><span>Python</span><span>Compliance &amp; FedRAMP</span><span>Platform Security</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───────── IMPACT / SERVICES ───────── -->
+  <section class="section alt" id="impact">
+    <div class="shell">
+      <div class="section-head">
+        <p class="kicker reveal">What I do</p>
+        <h2 class="reveal" style="--d:.05s">How I create impact</h2>
+        <p class="section-sub reveal" style="--d:.1s">Four ways I tend to be most useful to an organisation.</p>
+      </div>
+      <div class="cards">
+        <article class="card reveal">
+          <div class="card-ico">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M17.5 19a4.5 4.5 0 0 0 .5-8.97A6 6 0 0 0 6.1 9.6 3.9 3.9 0 0 0 6.5 19z"/><path d="M12 12v6M9.5 15.5 12 18l2.5-2.5"/></svg>
+          </div>
+          <h3>Cloud Architecture at Scale</h3>
+          <p>AWS platform design for large, regulated, multi-agency systems — networking, data, resilience and the compliance posture that has to come with them.</p>
+          <span class="card-tag">AWS · Platform · Resilience</span>
+        </article>
+        <article class="card reveal" style="--d:.06s">
+          <div class="card-ico">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
+          </div>
+          <h3>DevSecOps &amp; Automation</h3>
+          <p>Pipelines where security is a build step rather than a gate at the end, and environments that are reproducible because they're defined in code.</p>
+          <span class="card-tag">CI/CD · Terraform · GitOps</span>
+        </article>
+        <article class="card reveal" style="--d:.12s">
+          <div class="card-ico">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="3"/><path d="M9 9h6v6H9zM9 2v2M15 2v2M9 20v2M15 20v2M2 9h2M2 15h2M20 9h2M20 15h2"/></svg>
+          </div>
+          <h3>Applied AI for Operations</h3>
+          <p>Predictive models and LLMs placed where they earn their keep: incident management, observability, and generating and maintaining infrastructure code.</p>
+          <span class="card-tag">MLOps · LLM · PromptOps</span>
+        </article>
+        <article class="card reveal" style="--d:.18s">
+          <div class="card-ico">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 2 8l10 5 10-5-10-5z"/><path d="M2 16l10 5 10-5M2 12l10 5 10-5"/></svg>
+          </div>
+          <h3>Research, Review &amp; Advisory</h3>
+          <p>Peer review and editorial work for engineering journals, plus architecture reviews and workshops that leave a team able to run the thing without me.</p>
+          <span class="card-tag">Editorial · Advisory · Workshops</span>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───────── WORK ───────── -->
+  <section class="section" id="work">
+    <div class="shell">
+      <div class="section-head">
+        <p class="kicker reveal">Selected work</p>
+        <h2 class="reveal" style="--d:.05s">Platforms &amp; frameworks</h2>
+        <p class="section-sub reveal" style="--d:.1s">Systems in production, and the frameworks that came out of building them.</p>
+      </div>
+      <div class="work-grid">
+
+        <article class="work reveal">
+          <div class="work-top"><span class="work-kind">Platform</span><span class="work-year">2019 — now</span></div>
+          <h3>MD THINK — Maryland's human-services cloud</h3>
+          <p>Lead AWS Cloud Architect on the Maryland Total Human-services Integrated Network: the shared cloud platform that integrates social-services data across state departments and supports benefits programs reaching hundreds of thousands of residents.</p>
+          <ul class="work-tags"><li>AWS</li><li>Multi-agency</li><li>Eligibility &amp; Enrollment</li></ul>
+        </article>
+
+        <article class="work reveal" style="--d:.06s">
+          <div class="work-top"><span class="work-kind">Platform</span><span class="work-year">Earlier</span></div>
+          <h3>Arkansas DHS eligibility modernization</h3>
+          <p>Cloud and infrastructure work through the modernization of a state eligibility system — the kind of migration where correctness and continuity matter more than velocity.</p>
+          <ul class="work-tags"><li>Public sector</li><li>Migration</li><li>Compliance</li></ul>
+        </article>
+
+        <article class="work reveal" style="--d:.12s">
+          <div class="work-top"><span class="work-kind">Framework</span><span class="work-year">2025</span></div>
+          <h3>PromptOps</h3>
+          <p>A framework for using large language models to generate and maintain infrastructure as code — moving from static, manually authored workflows toward infrastructure that adapts as requirements change.</p>
+          <ul class="work-tags"><li>LLM</li><li>IaC</li><li>Automation</li></ul>
+        </article>
+
+        <article class="work reveal" style="--d:.18s">
+          <div class="work-top"><span class="work-kind">Framework</span><span class="work-year">2022</span></div>
+          <h3>AI-Augmented DevSecOps</h3>
+          <p>Predictive intelligence applied to the security path of the delivery pipeline, so risk is surfaced during the build rather than discovered in production. Implemented in real enterprise environments.</p>
+          <ul class="work-tags"><li>DevSecOps</li><li>Predictive</li><li>Pipeline security</li></ul>
+        </article>
+
+        <article class="work reveal" style="--d:.24s">
+          <div class="work-top"><span class="work-kind">Framework</span><span class="work-year">2025</span></div>
+          <h3>Cognitive &amp; Neuroadaptive DevOps</h3>
+          <p>Deep-learning models — LSTM and transformer architectures — embedded in workflow orchestration, producing pipelines that learn from their own deployment history and anticipate failure.</p>
+          <ul class="work-tags"><li>Deep learning</li><li>Orchestration</li><li>Self-adaptive</li></ul>
+        </article>
+
+        <article class="work reveal" style="--d:.3s">
+          <div class="work-top"><span class="work-kind">Framework</span><span class="work-year">2024</span></div>
+          <h3>AI-Driven Observability</h3>
+          <p>From reactive to proactive: observability for cloud-native systems that infers degradation ahead of the alert, rather than describing the outage after it has started.</p>
+          <ul class="work-tags"><li>Observability</li><li>Cloud-native</li><li>Incident management</li></ul>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ───────── RESEARCH ───────── -->
+  <section class="section alt" id="research">
+    <div class="shell">
+      <div class="section-head">
+        <p class="kicker reveal">Research</p>
+        <h2 class="reveal" style="--d:.05s">Published work</h2>
+        <p class="section-sub reveal" style="--d:.1s">
+          Nine peer-reviewed papers, 2022&ndash;2025, developing a connected line of work on bringing
+          machine learning and large language models into the DevOps lifecycle.
+        </p>
+      </div>
+
+      <div class="scholar-strip reveal">
+        <div class="metric"><strong>9</strong><span>Publications</span></div>
+        <div class="metric"><strong>63</strong><span>Citations</span></div>
+        <div class="metric"><strong>5</strong><span>h-index</span></div>
+        <div class="metric"><strong>3</strong><span>i10-index</span></div>
+        <a class="btn btn-ghost sm scholar-link" href="https://scholar.google.com/citations?user=4AXvYroAAAAJ&amp;hl=en" target="_blank" rel="noopener">
+          View on Google Scholar
+          <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M9 7h8v8"/></svg>
+        </a>
+      </div>
+
+      <ol class="papers">
+        <li class="paper reveal">
+          <span class="paper-year">2025</span>
+          <div class="paper-body">
+            <h3>Neuroadaptive DevOps: Real-Time ML-Driven Adaptation of Deployment Pipelines in Edge Environments</h3>
+            <p class="paper-venue">Journal of Data Analysis and Critical Management, 1(3)</p>
+          </div>
+          <span class="paper-cites" title="Citations, per Google Scholar">15</span>
+        </li>
+        <li class="paper reveal" style="--d:.04s">
+          <span class="paper-year">2025</span>
+          <div class="paper-body">
+            <h3>Cognitive DevOps: Applying Deep Learning for Intelligent Workflow Orchestration</h3>
+            <p class="paper-venue">International Journal of Technology Management &amp; Humanities, 11(1)</p>
+          </div>
+          <span class="paper-cites" title="Citations, per Google Scholar">13</span>
+        </li>
+        <li class="paper reveal" style="--d:.08s">
+          <span class="paper-year">2024</span>
+          <div class="paper-body">
+            <h3>Towards Autonomous DevOps: Machine Learning Models for Predictive Infrastructure Management</h3>
+            <p class="paper-venue">International Journal of Advanced Research in Electrical, Electronics and Instrumentation Engineering</p>
+          </div>
+          <span class="paper-cites" title="Citations, per Google Scholar">11</span>
+        </li>
+        <li class="paper reveal" style="--d:.12s">
+          <span class="paper-year">2023</span>
+          <div class="paper-body">
+            <h3>Intelligent Incident Management: Leveraging AI for Real-Time Root Cause Analysis in DevOps Pipelines</h3>
+            <p class="paper-venue">ESP Journal of Engineering &amp; Technology Advancements, 3(1)</p>
+          </div>
+          <span class="paper-cites" title="Citations, per Google Scholar">8</span>
+        </li>
+        <li class="paper reveal" style="--d:.16s">
+          <span class="paper-year">2025</span>
+          <div class="paper-body">
+            <h3>PromptOps: Leveraging LLMs for Dynamic Infrastructure as Code Generation and Maintenance</h3>
+            <p class="paper-venue">International Journal of Multidisciplinary Research in Science, Engineering and Technology</p>
+          </div>
+          <span class="paper-cites" title="Citations, per Google Scholar">6</span>
+        </li>
+        <li class="paper reveal" style="--d:.20s">
+          <span class="paper-year">2022</span>
+          <div class="paper-body">
+            <h3>AI-Augmented DevSecOps: Enhancing Security through Predictive Intelligence</h3>
+            <p class="paper-venue">ESP Journal of Engineering &amp; Technology Advancements, 2(3)</p>
+          </div>
+          <span class="paper-cites" title="Citations, per Google Scholar">4</span>
+        </li>
+        <li class="paper reveal" style="--d:.24s">
+          <span class="paper-year">2024</span>
+          <div class="paper-body">
+            <h3>From Reactive to Proactive: AI-Driven Observability in Cloud-Native DevOps</h3>
+            <p class="paper-venue">International Journal of Innovative Research in Science, Engineering and Technology</p>
+          </div>
+          <span class="paper-cites" title="Citations, per Google Scholar">3</span>
+        </li>
+        <li class="paper reveal" style="--d:.28s">
+          <span class="paper-year">2022</span>
+          <div class="paper-body">
+            <h3>Forecasting Software Delivery Bottlenecks Using Time-Series AI Models</h3>
+            <p class="paper-venue">ESP Journal of Engineering &amp; Technology Advancements, 2(1)</p>
+          </div>
+          <span class="paper-cites" title="Citations, per Google Scholar">3</span>
+        </li>
+        <li class="paper reveal" style="--d:.32s">
+          <span class="paper-year">2024</span>
+          <div class="paper-body">
+            <h3>Trustworthy MLOps: Ensuring Security, Fairness, and Governance in Automated DevOps Pipelines</h3>
+            <p class="paper-venue">International Journal of Innovative Research in Computer and Communication Engineering</p>
+          </div>
+          <span class="paper-cites empty" aria-hidden="true"></span>
+        </li>
+      </ol>
+
+      <!-- Recognition -->
+      <div class="recog">
+        <div class="recog-col reveal">
+          <h3>Awards</h3>
+          <ul>
+            <li><strong>Asia International Outstanding Technical &amp; Digital Innovation Award</strong><span>ISTRA, 2024 — for work in DevSecOps and machine learning</span></li>
+            <li><strong>Global Recognition Award</strong><span>AI and Telecommunications — leadership in AI-integrated DevSecOps adoption</span></li>
+          </ul>
+        </div>
+        <div class="recog-col reveal" style="--d:.06s">
+          <h3>Fellowships &amp; editorial</h3>
+          <ul>
+            <li><strong>Fellow, Hackathon Raptors Association</strong><span>Elected fellowship</span></li>
+            <li><strong>Fellow, Soft Computing Research Society (SCRS)</strong><span>Elected fellowship</span></li>
+            <li><strong>Editorial Board, ESP-JETA</strong><span>ESP Journal of Engineering &amp; Technology Advancements, since 2023</span></li>
+            <li><strong>Editorial Board, ESP-IJAST</strong><span>ESP International Journal of Advancements in Science &amp; Technology</span></li>
+          </ul>
+        </div>
+        <div class="recog-col reveal" style="--d:.12s">
+          <h3>Certifications</h3>
+          <ul>
+            <li><strong>AWS Certified Solutions Architect &ndash; Professional</strong><span>Amazon Web Services</span></li>
+            <li><strong>AWS Certified Data Engineer</strong><span>Amazon Web Services</span></li>
+            <li><strong>Certified Kubernetes Administrator (CKA)</strong><span>Cloud Native Computing Foundation</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───────── JOURNEY / SPEAKING ───────── -->
+  <section class="section" id="journey">
+    <div class="shell">
+      <div class="section-head">
+        <p class="kicker reveal">Journey</p>
+        <h2 class="reveal" style="--d:.05s">Experience &amp; speaking</h2>
+        <p class="section-sub reveal" style="--d:.1s">Twenty years of public-sector and enterprise infrastructure.</p>
+      </div>
+
+      <ol class="timeline">
+        <li class="tl reveal">
+          <div class="tl-dot" aria-hidden="true"></div>
+          <div class="tl-when">2019 — Present</div>
+          <div class="tl-body">
+            <h3>Lead AWS Cloud Architect <span>· MD THINK — Maryland DHS / DoIT</span></h3>
+            <p>Cloud architecture and DevSecOps leadership on Maryland's shared human-services
+            platform, including the Eligibility &amp; Enrollment initiative. Lead a team across
+            DevOps, networking, identity and access management and system administration, with
+            end-to-end responsibility for the AWS environment and its security posture.</p>
+          </div>
+        </li>
+        <li class="tl reveal" style="--d:.06s">
+          <div class="tl-dot" aria-hidden="true"></div>
+          <div class="tl-when">Jul 2016 — Feb 2019</div>
+          <div class="tl-body">
+            <h3>Senior Technical Release &amp; Infrastructure Lead <span>· Arkansas Department of Human Services</span></h3>
+            <p>Release and infrastructure leadership on the Arkansas Enrollment and Eligibility
+            Framework (ARK EEF) — a state eligibility modernization programme where a defect
+            means a real person's benefits are affected.</p>
+          </div>
+        </li>
+        <li class="tl reveal" style="--d:.12s">
+          <div class="tl-dot" aria-hidden="true"></div>
+          <div class="tl-when">2015 — 2016</div>
+          <div class="tl-body">
+            <h3>Release Manager <span>· Kohl's Department Stores</span></h3>
+            <p>Release management across retail systems at national scale, where the delivery
+            calendar is set by the trading year and there is no good week for an outage.</p>
+          </div>
+        </li>
+        <li class="tl reveal" style="--d:.18s">
+          <div class="tl-dot" aria-hidden="true"></div>
+          <div class="tl-when">2006 — 2015</div>
+          <div class="tl-body">
+            <h3>Assistant Consultant <span>· Tata Consultancy Services</span></h3>
+            <p>Nine years across software release, infrastructure and early cloud engineering —
+            where the operational fundamentals came from, and the habit of reading the logs
+            before guessing.</p>
+          </div>
+        </li>
+      </ol>
+
+      <div class="speaking reveal">
+        <h3>Speaking &amp; keynotes</h3>
+        <p>Keynote speaker and invited expert at international conferences since 2022, on
+        bringing AI into DevSecOps, modernizing public-sector cloud, and building delivery
+        pipelines that hold up under compliance scrutiny.</p>
+        <div class="talks">
+          <div class="talk">
+            <strong>Keynote Speaker &amp; Session Chair — ICMETI-2025</strong>
+            <span>Intl. Conference on Multidisciplinary Engineering &amp; Technological Innovation · 2025</span>
+          </div>
+          <div class="talk">
+            <strong>Keynote: “Elastic Minds — Architecting Scalable Generative AI on Cloud-Native Infrastructure”</strong>
+            <span>Inaugural CI3.AI Summit (Collaborative Intelligence &amp; Advanced AI) · 2024</span>
+          </div>
+          <div class="talk">
+            <strong>Distinguished Speaker — Intl. Seminar on MLOps &amp; Data Engineering Synergy</strong>
+            <span>Universal Research Reports · 2023</span>
+          </div>
+          <div class="talk">
+            <strong>Speaker — WCASET-2023</strong>
+            <span>World Conference on Applied Science, Engineering &amp; Technology · 2023</span>
+          </div>
+          <div class="talk">
+            <strong>Keynote Speaker — ICMECT-2022</strong>
+            <span>Intl. Conference on Mechanical, Electronics, Computer &amp; Technology · 2022</span>
+          </div>
+        </div>
+        <a class="btn btn-ghost sm" href="#contact">Invite me to speak</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───────── PRESS ───────── -->
+  <section class="section alt" id="press">
+    <div class="shell">
+      <div class="section-head">
+        <p class="kicker reveal">Press</p>
+        <h2 class="reveal" style="--d:.05s">Coverage</h2>
+        <p class="section-sub reveal" style="--d:.1s">
+          Technology press write-ups of the frameworks, 2022&ndash;2025.
+        </p>
+      </div>
+      <div class="press-grid">
+        <a class="press reveal" href="https://techbullion.com/selva-kumar-ranganathan-brings-new-ai-techniques-to-root-cause-detection-in-ci-cd-environments/" target="_blank" rel="noopener">
+          <div class="press-top">
+            <span class="press-outlet">TechBullion</span>
+            <span class="press-date">Mar 2024</span>
+          </div>
+          <h3>Selva Kumar Ranganathan Brings New AI Techniques to Root Cause Detection in CI/CD Environments</h3>
+          <span class="press-topic">on Intelligent Incident Management</span>
+        </a>
+        <a class="press reveal" style="--d:.05s" href="https://aijourn.com/selva-kumar-leads-cloud-native-devops-into-a-proactive-ai-powered-era/" target="_blank" rel="noopener">
+          <div class="press-top">
+            <span class="press-outlet">The AI Journal</span>
+            <span class="press-date">Sep 2024</span>
+          </div>
+          <h3>Selva Kumar Leads Cloud-Native DevOps into a Proactive AI-Powered Era</h3>
+          <span class="press-topic">on AI-Driven Observability</span>
+        </a>
+        <a class="press reveal" style="--d:.10s" href="https://usawire.com/cognitive-devops-selvas-vision-for-ai-driven-self-adapting-delivery-pipelines/" target="_blank" rel="noopener">
+          <div class="press-top">
+            <span class="press-outlet">USA Wire</span>
+            <span class="press-date">Aug 2025</span>
+          </div>
+          <h3>Cognitive DevOps: Selva&rsquo;s Vision for AI-Driven, Self-Adapting Delivery Pipelines</h3>
+          <span class="press-topic">on Cognitive DevOps</span>
+        </a>
+        <a class="press reveal" style="--d:.15s" href="https://programminginsider.com/fairness-security-and-control-selva-kumar-ranganathans-formula-for-trustworthy-mlops/" target="_blank" rel="noopener">
+          <div class="press-top">
+            <span class="press-outlet">Programming Insider</span>
+            <span class="press-date">Jul 2024</span>
+          </div>
+          <h3>Fairness, Security and Control: Selva Kumar Ranganathan&rsquo;s Formula for Trustworthy MLOps</h3>
+          <span class="press-topic">on Trustworthy MLOps</span>
+        </a>
+        <a class="press reveal" style="--d:.20s" href="https://vocal.media/01/reinventing-infrastructure-management-selva-kumar-ranganathan-introduces-autonomous-dev-ops-framework" target="_blank" rel="noopener">
+          <div class="press-top">
+            <span class="press-outlet">Vocal Media</span>
+            <span class="press-date">2025</span>
+          </div>
+          <h3>Reinventing Infrastructure Management: Selva Kumar Ranganathan Introduces Autonomous DevOps Framework</h3>
+          <span class="press-topic">on Towards Autonomous DevOps</span>
+        </a>
+        <a class="press reveal" style="--d:.25s" href="https://nerdbot.com/2022/09/05/mr-ranganathan-reinvents-devsecops-with-predictive-intelligence-framework/" target="_blank" rel="noopener">
+          <div class="press-top">
+            <span class="press-outlet">Nerdbot</span>
+            <span class="press-date">Sep 2022</span>
+          </div>
+          <h3>Mr. Ranganathan Reinvents DevSecOps with Predictive Intelligence Framework</h3>
+          <span class="press-topic">on AI-Augmented DevSecOps</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───────── CONTACT ───────── -->
+  <section class="section contact" id="contact">
+    <div class="shell contact-inner">
+      <div class="contact-copy">
+        <p class="kicker reveal">Contact</p>
+        <h2 class="reveal" style="--d:.05s">Let's build something<br>that stays up.</h2>
+        <p class="lede reveal" style="--d:.1s">
+          Architecture reviews, advisory work, a workshop, a research collaboration, or a question
+          about any of the frameworks above — the inbox is open.
+        </p>
+        <div class="contact-links reveal" style="--d:.15s">
+          <a class="clink" href="mailto:selvakranga.doit@gmail.com">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="3"/><path d="m2.5 7 9.5 6 9.5-6"/></svg>
+            <span>selvakranga.doit@gmail.com</span>
+          </a>
+          <a class="clink" href="https://www.linkedin.com/in/selva-kumar-ranganathan-b67a283a/" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM9 9h3.8v1.7h.05A4.2 4.2 0 0 1 16.6 8.7c4 0 4.7 2.6 4.7 6V21h-4v-5.5c0-1.3 0-3-1.9-3s-2.2 1.4-2.2 2.9V21H9z"/></svg>
+            <span>LinkedIn</span>
+          </a>
+          <a class="clink" href="https://scholar.google.com/citations?user=4AXvYroAAAAJ&amp;hl=en" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 2 8l10 5 10-5-10-5z"/><path d="M6 10.5V16c0 1.7 2.7 3 6 3s6-1.3 6-3v-5.5"/></svg>
+            <span>Google Scholar <em>— 9 papers, 63 citations</em></span>
+          </a>
+        </div>
+      </div>
+
+      <form class="contact-form reveal" style="--d:.1s" id="contactForm">
+        <div class="field">
+          <label for="cname">Name</label>
+          <input id="cname" name="name" type="text" required autocomplete="name" placeholder="Your name">
+        </div>
+        <div class="field">
+          <label for="cemail">Email</label>
+          <input id="cemail" name="email" type="email" required autocomplete="email" placeholder="you@organisation.com">
+        </div>
+        <div class="field">
+          <label for="cmsg">Message</label>
+          <textarea id="cmsg" name="message" rows="5" required placeholder="What are you working on?"></textarea>
+        </div>
+        <button class="btn btn-primary full" type="submit">
+          Send message
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m22 2-7 20-4-9-9-4z"/></svg>
+        </button>
+        <p class="form-note">Opens your email client with the message ready to send.</p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="shell footer-inner">
+    <span>&copy; <span id="yr">2026</span> Selva Kumar Ranganathan</span>
+    <nav class="footer-links" aria-label="Footer">
+      <a href="#about">About</a>
+      <a href="#work">Work</a>
+      <a href="#research">Research</a>
+      <a href="#press">Press</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a href="#top" class="to-top">Back to top ↑</a>
+  </div>
+</footer>
+
+<script src="script.js?v=4"></script>
+</body>
+</html>
